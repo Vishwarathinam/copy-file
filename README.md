@@ -18,9 +18,26 @@ Anaconda - Python 3.7
 ### Step 6: 
 
 ## PROGRAM:
+print("Enter the Name of Source File: ")
+sFile = input()
+print("Enter the Name of Target File: ")
+tFile = input()
+
+fileHandle = open(sFile, "r")
+texts = fileHandle.readlines()
+fileHandle.close()
+
+fileHandle = open(tFile, "w")
+for s in texts:
+    fileHandle.write(s)
+fileHandle.close()
+
+print("\nFile Copied Successfully!")
 
 ### OUTPUT:
-
+![git log](ss1.png)
+![git log](ss2.png)
+![git log](ss3.png)
 
 
 ## RESULT:
